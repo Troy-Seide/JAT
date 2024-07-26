@@ -1,0 +1,26 @@
+<div class="login-container">
+    <img class="pic" src="assets/Images/jobpic.jpg" alt="missing image">
+    <div class="logo">JAT</div>
+    <div class="desc">
+        JAT will help you keep track of all your job applications in a simpler format!
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <!-- [(ngModel)]="username" before -->
+            <input type="text" name="email" class="form-control" [(ngModel)]="logUser.email"/>
+        </div>
+        <div class="form-group">
+            <label for="pword">Password</label>
+            <!-- [(ngModel)]="password" before -->
+            <input type="password" name="pword" class="form-control" [(ngModel)]="logUser.password"/>
+        </div>
+        <div class="btn-container">
+            <div class="error">{{errorMsg}}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button> &nbsp;
+            <!-- <button class="btn btn-dark" [routerLink]="['/register']">Register</button> -->
+            <a [routerLink]="['/register']" class="btn btn-dark">Register</a>
+        </div>
+    </div>
+    <!-- <a [routerLink]="['/jobdetails']" class="btn btn-success">Edit</a> -->
+</div>

@@ -1,0 +1,61 @@
+<app-header></app-header>
+
+<div class="edit-form">
+<form #Form="ngForm" (ngSubmit)="updateJob()">
+    <!-- <div class="form-group">
+        <label>userId</label>
+        <input type="text" name="FName" #FName="ngModel" [(ngModel)]="jobApp.userId" required class="form-control"/> -->
+         <!-- <div *ngIf="FName.errors && form.submitted" class="text-danger">
+            Please Enter First Name 
+        </div> -->
+    <!-- </div> -->
+    <div class="form-group">
+        <label>Company Name</label>
+        <input type="text" name="FName" #FName="ngModel" [(ngModel)]="jobApp.companyName" required class="form-control"/>
+        <!-- <div *ngIf="FName.errors && form.submitted" class="text-danger">
+            Please Enter First Name 
+        </div> -->
+    </div>
+    <div class="form-group">
+        <label>Position</label>
+        <input type="text" name="LName" #LName="ngModel" [(ngModel)]="jobApp.position" required class="form-control"/>
+        <!-- <div *ngIf="LName.errors && form.submitted" class="text-danger">
+            Please Enter Last Name 
+        </div> -->
+    </div>
+    <div class="form-group">
+        <label>Job Description</label>
+        <textarea name="Email" #Email="ngModel" [(ngModel)]="jobApp.description"
+        required class="form-control"></textarea>
+        <!-- <div *ngIf="Email.errors && form.submitted" class="text-danger">
+            Please Enter Email
+        </div> -->
+    </div>
+    <div class="form-group">
+        <label>Location</label>
+        <input type="text" name="Contact" #Contact="ngModel" [(ngModel)]="jobApp.location" required class="form-control"/>
+        <!-- <div *ngIf="Contact.errors && form.submitted" class="text-danger">
+            Please Enter Contact
+        </div> -->
+    </div>
+    <div class="form-group">
+        <label>Status</label>
+        <textarea name="Product" #Product="ngModel" [(ngModel)]="jobApp.status"
+        required class="form-control"></textarea>
+        <!-- <div *ngIf="Product.errors && form.submitted" class="text-danger">
+            Please Product Needs
+        </div> -->
+    </div>
+    <div class="form-group">
+        <label>Date Applied</label>
+        <input type="text" name="Password" #Password="ngModel" [(ngModel)]="jobApp.dateApplied" required class="form-control"/>
+        <!-- <div *ngIf="Password.errors && form.submitted" class="text-danger">
+            Please Enter Password 
+        </div> -->
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Save" class="btn btn-dark"/>
+    </div>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+.header-container {
+    width: 100%;
+    height: 80px;
+    background-color: #fdc827;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight:bold;
+    font-size: 24px;
+    font-family: 'Creepster', cursive;
+    letter-spacing: 4px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.logout {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 40px;
+    cursor: pointer; //helps to indicate a link, helps to make it appear clickable
+}
+
+.favorites {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 40px;
+    cursor: pointer;
+}
